@@ -287,19 +287,3 @@ var WebEnc = WebEnc || {};
     }
 
 }(WebEnc));
-
-
-// test
-document.addEventListener("DOMContentLoaded", function () {
-
-    WebEnc.init(true);
-    console.log("Init unlock " + WebEnc.isUnlocked());
-    if (WebEnc.testPassPhrase("blabla", true)) {
-        console.log("PAss unlock " + WebEnc.isUnlocked());
-        //WebEnc.displayHTML('/hello.html', document.getElementById("cont"));
-
-        //WebEnc.displayImage('/sam.png', document.getElementById("testImg"));
-    }
-
-});
-
